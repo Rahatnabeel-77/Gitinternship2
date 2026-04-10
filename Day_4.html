@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Ticket Reservation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .Ticket_box{
+           width: 50%;
+           height: 250px;
+           box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.2), inset 0 -5px 10px rgba(0,0,0,0.1);
+           transition: all 0.3s ease;
+           border-radius: 10px;
+           position: relative;   
+           overflow: hidden; 
+        }
+        .btn{
+            margin-top: 20px;
+            margin-right: 20px;
+            float: right;
+            border: none;
+            border-radius: 25px;
+            padding: 6px;
+            background-color: rgb(243, 225, 227);
+            color: brown;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            
+        }
+        .left{
+            width: 50%;
+            margin-left: 10px;
+           
+        }
+        .left span{
+            color: gray;
+        }
+        .right{
+            width: 50%;
+            text-align: right;
+            margin-right: 10px;
+            color: gray;
+        }
+        .container_row{
+            display: flex;
+        }
+        .part2,.part3,.part4 {
+            padding-right: 60px;
+            margin-top: 10px;
+        }
+      .part1 img{
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+      }
+      .part2 span, .part4 span{
+        color: gray;
+      }
+      .part3 button{
+        border: none;
+        padding: 5px;
+        background-color: rgb(188, 204, 227);
+        color: rgb(7, 84, 142);
+        border-radius: 5px;
+      }
+      .icon{
+        margin: 10px;
+      }
+      .box_footer{
+        height: 50px;
+        background-color: rgb(10, 10, 170);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+      .box_footer h4{
+        align-items: center;
+        justify-content: center;
+        text-align: right;
+        margin-top: 20px;
+        color: aliceblue;
+        margin-right: 5px;
+      }
+
+      
+@media (max-width: 600px){
+    .Ticket_box{
+        width: 95%;
+        height: auto; 
+        padding-bottom: 60px;
+    }
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right{
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .container_row{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .part2, .part3, .part4{
+        padding-right: 0;
+        margin-top: 8px;
+    }
+
+    .part3{
+        font-size: 14px;
+    }
+
+    .icon{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 900px){
+    .Ticket_box{
+        width: 80%;
+    }
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="Ticket_box">
+        <button class="btn">3 seats Left</button>
+        <div class="container">
+            <div class="left"><p>Bilal Travels skyway- <span>imousine business sleeper</span></p></div>
+            <div class="right">Departure - Fri 10,2026</div>
+        </div>
+        <div class="container_row">
+          <div class="part1">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.bXWux5xhz2Vpg2k7w_Xr0QHaHa?pid=Api&P=0&h=220" alt="">
+        </div>
+        <div class="part2">05:00 PM <br> <span>Karachi</span></div>
+        <div class="part3">◻-----<button>19 h 00m</button>-----◻</div>
+        <div class="part4">12:00 PM <br> <span>Mansehra</span></div>
+        </div>
+        <div class="icon">
+             <i class="bi bi-plug"></i>
+             <i class="bi bi-wifi"></i>
+             <i class="bi bi-snow"></i>
+             <i class="bi bi-person"></i>
+        </div>
+        <div class="box_footer">
+            <h4>Starting from <b>PKR 14500</b></h4>
+        </div>
+    </div> 
+
+
+     <div class="Ticket_box">
+        <button class="btn">3 seats Left</button>
+        <div class="container">
+            <div class="left"><p>Bilal Travels skyway- <span>imousine business sleeper</span></p></div>
+            <div class="right">Departure - Fri 10,2026</div>
+        </div>
+        <div class="container_row">
+          <div class="part1">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.bXWux5xhz2Vpg2k7w_Xr0QHaHa?pid=Api&P=0&h=220" alt="">
+        </div>
+        <div class="part2">05:00 PM <br> <span>Karachi</span></div>
+        <div class="part3">◻-----<button>19 h 00m</button>-----◻</div>
+        <div class="part4">12:00 PM <br> <span>Mansehra</span></div>
+        </div>
+        <div class="icon">
+             <i class="bi bi-plug"></i>
+             <i class="bi bi-wifi"></i>
+             <i class="bi bi-snow"></i>
+             <i class="bi bi-person"></i>
+        </div>
+        <div class="box_footer">
+            <h4>Starting from <b>PKR 14500</b></h4>
+        </div>
+    </div> 
+
+
+     <div class="Ticket_box">
+        <button class="btn">3 seats Left</button>
+        <div class="container">
+            <div class="left"><p>Bilal Travels skyway- <span>imousine business sleeper</span></p></div>
+            <div class="right">Departure - Fri 10,2026</div>
+        </div>
+        <div class="container_row">
+          <div class="part1">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.bXWux5xhz2Vpg2k7w_Xr0QHaHa?pid=Api&P=0&h=220" alt="">
+        </div>
+        <div class="part2">05:00 PM <br> <span>Karachi</span></div>
+        <div class="part3">◻-----<button>19 h 00m</button>-----◻</div>
+        <div class="part4">12:00 PM <br> <span>Mansehra</span></div>
+        </div>
+        <div class="icon">
+             <i class="bi bi-plug"></i>
+             <i class="bi bi-wifi"></i>
+             <i class="bi bi-snow"></i>
+             <i class="bi bi-person"></i>
+        </div>
+        <div class="box_footer">
+            <h4>Starting from <b>PKR 14500</b></h4>
+        </div>
+    </div> 
+</body>
+</body>
+</html>
