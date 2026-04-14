@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card-custom:hover{
+           transform: translateY(-5px);
+           transition: 0.3s;
+        }
+        .bi{
+        cursor: pointer;
+        transition: 0.2s;
+       }
+
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-md-4">
+<div class="card card-custom shadow-sm border-0 rounded-4 pb-2 mt-3">
+<div class=" rounded-top position-relative d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(135deg, #c49cec, #4a2dbd); height: 70px;">
+<div class=" text-white shadow fw-bold d-flex justify-content-center align-items-center rounded-circle" style=" background-color: rgba(219, 218, 218, 0.304); width: 40px; height: 40px;">SM</div>
+<div type="button" class="btn btn-sm text-white " style="background-color: rgba(219, 218, 218, 0.304); border-radius: 25px; font-size: 10px; ">★ Default</div>
+</div>
+<div class="p-3 text-start">
+<h6 class="mb-0">Sarah Mitchell</h6>
+<p class="mb-0 text-muted small">Boss</p>
+<span class="text-muted small">(555) 234-8901</span>
+</div>
+<div class="line mx-2 mb-0"> <hr> </div>
+<div class="d-flex justify-content-center align-items-center gap-1">
+    <button class="btn cursor-pointer text-success justify-content-center px-4" style="background-color: rgba(214, 230, 214, 0.801) ; font-size: 11px;"><i class="bi bi-telephone"></i>Call</button>
+    <button class="btn cursor-pointer text-primary justify-content-center px-4" style="background-color:rgb(201, 222, 231) ; font-size: 11px"><i class="bi bi-chat-left"></i> Text</button>
+    <button class="btn cursor-pointer justify-content-center" style="background-color:rgb(243, 219, 175); color: rgb(213, 103, 35); font-size: 11px"> <i class="bi bi-star"></i></button>
+    <div class="text-muted mx-3">
+    <i class="bi bi-pencil-square"></i>
+    <i class="bi bi-trash"></i>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom shadow-sm border-0 rounded-4 pb-2 mt-3">
+<div class=" rounded-top position-relative d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(135deg, #ea8b9d, #ec162f); height: 70px;">
+<div class=" text-white shadow fw-bold d-flex justify-content-center align-items-center rounded-circle" style=" background-color: rgba(219, 218, 218, 0.304); width: 40px; height: 40px;">AC</div>
+</div>
+<div class="p-3 text-start">
+<h6 class="mb-0">Moom</h6>
+<p class="mb-0 text-muted small">Family</p>
+<span class="text-muted small">(555) 111-7654</span>
+</div>
+<div class="line mx-2 mb-0"> <hr> </div>
+<div class="d-flex justify-content-center align-items-center gap-1">
+    <button class="btn cursor-pointer text-success justify-content-center px-4" style="background-color: rgba(214, 230, 214, 0.801) ; font-size: 11px;"><i class="bi bi-telephone"></i>Call</button>
+    <button class="btn cursor-pointer text-primary justify-content-center px-4" style="background-color:rgb(201, 222, 231) ; font-size: 11px"><i class="bi bi-chat-left"></i> Text</button>
+    <div class="text-muted mx-3">
+    <i class="bi bi-star"></i>    
+    <i class="bi bi-pencil-square"></i>
+    <i class="bi bi-trash"></i>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom shadow-sm border-0 rounded-4 pb-2 mt-3">
+<div class=" rounded-top position-relative d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(135deg, #9bcaed, #2d92bd); height: 70px;">
+<div class=" text-white shadow fw-bold d-flex justify-content-center align-items-center rounded-circle" style=" background-color: rgba(219, 218, 218, 0.304); width: 40px; height: 40px;">JR</div>
+</div>
+<div class="p-3 text-start">
+<h6 class="mb-0">Jake Rivera</h6>
+<p class="mb-0 text-muted small">Roommat</p>
+<span class="text-muted small">(555) 266-9871</span>
+</div>
+<div class="line mx-2 mb-0"> <hr> </div>
+<div class="d-flex justify-content-center align-items-center gap-1">
+    <button class="btn cursor-pointer text-success justify-content-center px-4" style="background-color: rgba(214, 230, 214, 0.801) ; font-size: 11px;"><i class="bi bi-telephone"></i>Call</button>
+    <button class="btn cursor-pointer text-primary justify-content-center px-4" style="background-color:rgb(201, 222, 231) ; font-size: 11px"><i class="bi bi-chat-left"></i> Text</button>
+    <div class="text-muted mx-3">
+    <i class="bi bi-star"></i>
+    <i class="bi bi-pencil-square"></i>
+    <i class="bi bi-trash"></i>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom shadow-sm border-0 rounded-4 pb-2 mt-3">
+<div class=" rounded-top position-relative d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(135deg, #ecb79c, #ec5418); height: 70px;">
+<div class=" text-white shadow fw-bold d-flex justify-content-center align-items-center rounded-circle" style=" background-color: rgba(219, 218, 218, 0.304); width: 40px; height: 40px;">AC</div>
+</div>
+<div class="p-3 text-start">
+<h6 class="mb-0">Alex Chen</h6>
+<p class="mb-0 text-muted small">Best Friend</p>
+<span class="text-muted small">(555) 238-8701</span>
+</div>
+<div class="line mx-2 mb-0"> <hr> </div>
+<div class="d-flex justify-content-center align-items-center gap-1">
+    <button class="btn cursor-pointer text-success justify-content-center px-4" style="background-color: rgba(214, 230, 214, 0.801) ; font-size: 11px;"><i class="bi bi-telephone"></i>Call</button>
+    <button class="btn cursor-pointer text-primary justify-content-center px-4" style="background-color:rgb(201, 222, 231) ; font-size: 11px"><i class="bi bi-chat-left"></i> Text</button>
+    <div class="text-muted mx-3">
+    <i class="bi bi-star"></i>
+    <i class="bi bi-pencil-square"></i>
+    <i class="bi bi-trash"></i>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom shadow-sm border-0 rounded-4 pb-2 mt-3">
+<div class=" rounded-top position-relative d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(135deg, #85dbb7, #099d38); height: 70px;">
+<div class=" text-white shadow fw-bold d-flex justify-content-center align-items-center rounded-circle" style=" background-color: rgba(219, 218, 218, 0.304); width: 40px; height: 40px;">DW</div>
+</div>
+<div class="p-3 text-start">
+<h6 class="mb-0">Dr. Williams</h6>
+<p class="mb-0 text-muted small">Docter</p>
+<span class="text-muted small">(555) 267-8901</span>
+</div>
+<div class="line mx-2 mb-0"> <hr> </div>
+<div class="d-flex justify-content-center align-items-center gap-1">
+    <button class="btn cursor-pointer text-success justify-content-center px-4" style="background-color: rgba(214, 230, 214, 0.801) ; font-size: 11px;"><i class="bi bi-telephone"></i>Call</button>
+    <button class="btn cursor-pointer text-primary justify-content-center px-4" style="background-color:rgb(201, 222, 231) ; font-size: 11px"><i class="bi bi-chat-left"></i> Text</button>
+    <div class="text-muted mx-3">
+    <i class="bi bi-star"></i>
+    <i class="bi bi-pencil-square"></i>
+    <i class="bi bi-trash"></i>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card card-custom shadow-sm border-0 rounded-4 pb-2 mt-3">
+<div class=" rounded-top position-relative d-flex justify-content-between align-items-center px-3" style="background: linear-gradient(135deg, #b07ee1, #6405b8); height: 70px;">
+<div class=" text-white shadow fw-bold d-flex justify-content-center align-items-center rounded-circle" style=" background-color: rgba(219, 218, 218, 0.304); width: 40px; height: 40px;">TB</div>
+</div>
+<div class="p-3 text-start">
+<h6 class="mb-0">Taylor Brooks</h6>
+<p class="mb-0 text-muted small">Coworker</p>
+<span class="text-muted small">(555) 444-8901</span>
+</div>
+<div class="line mx-2 mb-0"> <hr> </div>
+<div class="d-flex justify-content-center align-items-center gap-1">
+    <button class="btn cursor-pointer text-success justify-content-center px-4" style="background-color: rgba(214, 230, 214, 0.801) ; font-size: 11px;"><i class="bi bi-telephone"></i>Call</button>
+    <button class="btn cursor-pointer text-primary justify-content-center px-4" style="background-color:rgb(201, 222, 231) ; font-size: 11px"><i class="bi bi-chat-left"></i> Text</button>
+    <div class="text-muted mx-3">
+    <i class="bi bi-star"></i>
+    <i class="bi bi-pencil-square"></i>
+    <i class="bi bi-trash"></i>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
