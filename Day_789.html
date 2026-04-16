@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.kilometer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.kilometer h6{
+    font-size: 19px;
+    margin-left: 50px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    margin:auto;
+    margin-top: 20px;
+    position: relative;
+}
+.line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    z-index: -1;
+}
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.dot.active {
+    background: black;
+    transform: scale(1.1);
+}
+
+.popup {
+    position: absolute;
+    bottom: 20px;
+    background: black;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: black;
+}
+
+
+.dot:hover .popup {
+    opacity: 1;
+    transform: translateY(0);
+}
+#amount {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a1abc;
+    transition: 0.3s;
+    text-shadow: 1px 1px 2px gray;
+}
+
+#amount.active {
+    transform: scale(1.2);
+}
+.no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 88px;
+    margin-top: 10px;
+}
+#resetBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 20px;
+    border: none;
+    background-color: rgba(26, 26, 188, 0.817);
+    color: #faf9f9;
+    border-radius: 25px;
+    width: 15%;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+
+<div class="container text-center mt-5">
+
+    <h2>Distance</h2>
+    <hr>
+<div class="kilometer">
+    <h6>Kilometer...</h6>
+   <h3 id="amount">0</h3>
+</div>
+
+
+    <div class="line">
+        <span class="dot active" data-value="0">
+            <span class="popup">0 km</span>
+        </span>
+        <span class="dot" data-value="2">
+            <span class="popup">2 km</span>
+        </span>
+        <span class="dot" data-value="4">
+             <span class="popup">4 km</span>
+        </span>
+        <span class="dot" data-value="6">
+             <span class="popup">6 km</span>
+        </span>
+        <span class="dot" data-value="8">
+             <span class="popup">8 km</span>
+        </span>
+        <span class="dot" data-value="10">
+             <span class="popup">10 km</span>
+        </span>
+    </div>
+    <div class="no">
+        <span>0</span>
+        <span>2</span>
+        <span>4</span>
+        <span>6</span>
+        <span>8</span>
+        <span>10</span>
+    </div>
+<button id="resetBtn">Reset</button>
+</div>
+
+    <script>
+   let baseAmount = 50;
+let dots = document.querySelectorAll(".dot");
+let amountText = document.getElementById("amount");
+let resetBtn = document.getElementById("resetBtn");
+
+function removeActive() {
+    dots.forEach(d => d.classList.remove("active"));
+}
+
+dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+        removeActive();
+
+        dot.classList.add("active");
+
+        let value = Number(dot.dataset.value);
+        let result = baseAmount * value;
+
+        amountText.innerText = result + " Rs";
+        
+        amountText.classList.add("active");
+        setTimeout(() => {
+            amountText.classList.remove("active");
+        }, 200);
+    });
+});
+
+resetBtn.addEventListener("click", () => {
+    removeActive();
+    dots[0].classList.add("active");
+    amountText.innerText = "0 Rs";
+});
+</script>
+</body>
+</html>
